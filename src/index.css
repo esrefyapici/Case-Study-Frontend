@@ -1,0 +1,30 @@
+@font-face {
+    font-family: Avenirbook;
+    src: url(../src/assets/fonts/Avenir-Book.ttf);
+}
+@font-face {
+    font-family: Montseratmedium;
+    src: url(../src/assets/fonts/Montserrat-Medium.otf);
+}
+@font-face {
+    font-family: Montseratregular;
+    src: url(../src/assets/fonts/Montserrat-Regular.ttf);
+}
+
+@import "tailwindcss";
+
+@theme {
+    --font-avenirbook: Avenirbook
+}
+@theme {
+    --font-montseratmedium: Montseratmedium
+}
+@theme {
+    --font-montseratregular: Montseratregular
+}
+
+.slick-prev, .slick-next {
+  width: 50px !important;
+  height: 50px !important;
+
+}

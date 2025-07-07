@@ -1,3 +1,4 @@
+import { IoIosStar, IoIosStarHalf, IoIosStarOutline } from "react-icons/io";
 const RatingStars = ({ score }) => {
   const fullStars = Math.floor(score);
   const hasHalfStar = score % 1 >= 0.5;
@@ -8,13 +9,13 @@ const RatingStars = ({ score }) => {
       {Array(fullStars)
         .fill()
         .map((_, i) => (
-          <span key={`full-${i}`}>★</span>
+          <span key={`full-${i}`}><IoIosStar /></span>
         ))}
-      {hasHalfStar && <span>⯪</span>}
+      {hasHalfStar && <span><IoIosStarHalf /></span>}
       {Array(emptyStars)
         .fill()
         .map((_, i) => (
-          <span key={`empty-${i}`}>☆</span>
+          <span key={`empty-${i}`}><IoIosStarOutline /></span>
         ))}
       <span className="font-avenirbook text-[14px] text-black ml-1">
         {score.toFixed(1)}/5
